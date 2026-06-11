@@ -537,7 +537,7 @@
     elFill.classList.toggle('low', timeLeft<=20);
   }
   // ---- leaderboard: Google Apps Script + Sheets (GET-based, CORS-safe). Falls back to localStorage if URL not set. ----
-  const LB_URL = 'PASTE_YOUR_WEB_APP_URL_HERE';   // ← Apps Script 배포 URL(/exec)을 여기에 붙여넣기
+  const LB_URL = 'https://script.google.com/macros/s/AKfycbz2uzeeY8k0spHMh-hAF2zUeepspG_BsE0OHyQZ_yPdHcXTYMrdR4Tj3bsyl65GZG00/exec';   // ← Apps Script 배포 URL(/exec)을 여기에 붙여넣기
   const REMOTE = LB_URL.indexOf('http') === 0;
   const LB_KEY='blueberry_lb_v1'; let lbMem=[], lbCache=[], lastScore=0, hlName=null, hlScore=0;
   function localLoad(){ try{ return JSON.parse(localStorage.getItem(LB_KEY)||'[]'); }catch(e){ return lbMem; } }
